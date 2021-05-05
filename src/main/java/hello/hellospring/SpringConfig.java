@@ -40,6 +40,13 @@ public class SpringConfig {
         return new MemberService(memberRepository);
     }
 
+/*
+    @Bean //timetraceAop는 스프링빈에 직접 등록하는게 좋음.
+    public TimeTraceAop timeTraceAop(){
+        return new TimeTraceAop();
+    }
+*/
+
 //    @Bean //MemberRepository 빈에 등록
 //    public MemberRepository memberRepository(){
 //        return new MemoryMemberRepository();
