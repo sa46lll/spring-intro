@@ -29,6 +29,7 @@ class MemberServiceIntegrationTest {
 
 
     @Test
+//    @Commit //db에 반영됨.
     void 회원가입() {
         //given
         Member member = new Member();

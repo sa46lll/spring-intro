@@ -2,11 +2,13 @@ package hello.hellospring.service;
 
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
 //@Service //spring container에 memberService를 등록시켜줌.
+@Transactional //jpa는 모든 데이터 변경이 transaction 안에서 실행되야함.
 public class MemberService {
 
     private final MemberRepository memberRepository;
